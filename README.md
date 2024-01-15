@@ -9,4 +9,4 @@ This is coding bootcamp files
  - UX/UI
  - Server
 
- Thank you#git.test
+ Thank you
