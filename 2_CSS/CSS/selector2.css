@@ -2,12 +2,62 @@
 h1 {
     color: gray;
 }
-
 /* 기본 속성 선택자 */
-
 div[name="name-1"] {
     background-color: red;
 }
-p[name="name-2"] {
+p[name="name-1"] {
     background-color: blanchedalmond;
+}
+[name="name-2"] {
+    background-color: blue;
+}
+#parent1 > li {
+    background-color: orange;
+}
+#parent1 > li > span {
+    background-color: aquamarine;
+}
+#test-parent p {
+    font-size: large; color: blue;
+}
+.div-cls {
+    border: 1px solid black; 
+    width: 200px; 
+    height: 200px; 
+    margin-bottom: 10px; 
+    background-color: gray;
+    cursor: pointer;   
+}
+#active-test:active {
+    background-color: yellow;  
+    width: 230px;
+    height: 230px;
+}
+#hover-test:hover {
+    background-color: aqua;
+    width: 230px;
+    height: 230px;
+}
+#hover-test {
+    transition-duration: 0.5s;
+}
+#focus-test:focus {
+    background-color: red;
+}
+input[name="fruits"]:checked {
+    width: 30px;
+    height: 30px;
+}
+#test-div2 > input:enabled {
+    background-color: salmon;
+}
+#test-div2 > input:disabled {
+    background-color: silver;
+}
+#div1 + div {
+    background-color: mediumorchid;
+}
+#div3 ~ div {
+    background-color: wheat;
 }

@@ -51,5 +51,133 @@
         <p name="name-2">
             p4
         </p>
+        <hr>
+        <h3>
+            자식 선택자
+        </h3>
+        <p>
+            지정된 요소 바로 하위에 존재하는 요소를 선택하는 선택자.
+            <br>
+            선택자1 > 선택자2 { css code ; }
+            <br>
+            - 선택자1 = 부모 요소 선택
+            <br>
+            - 선택자2 = 자식 요소 선택
+        </p>
+        <ul id="parent1"> 
+            Parent
+            <li>
+                Child1
+            </li>
+            <li>
+                <span>
+                    Child2
+                </span>
+            </li>
+            <li>
+                Child3
+            </li>
+            <li>
+                <span>
+                    Child4
+                </span>
+            </li>
+        </ul>
+        <h3>
+            후손(자손) 선택자
+        </h3>
+        <p>
+            지정된 요소의 모든 하위에 존재하는 요소를 선택하는 선택자 <br>
+            선택자1 선택자2 { css code ; } <br>
+            - 선택자1 = 부모(조상) <br>
+            - 선택자2 = 후손
+        </p>
+        <div id="test-parent">
+            <p>
+                "test-parent" 자식요소
+            </p>
+            <p>
+                "test-parent" 후손요소
+            </p>
+            <div>
+                <p>
+                    나도 후손일까?
+                </p>
+            </div>
+        </div>
+        <hr>
+        <h3>
+            반응 선택자
+        </h3>
+        <p>
+            사용자의 움직임에 따라 반응하여 스타일이 달라지는 선택자 <br>
+            (hover over, click) <br>
+            - if click (:active) <br>
+            - if hover over (:hover)
+        </p>
+        <div class="div-cls" id="active-test">
+            active test
+        </div>
+        <div class="div-cls" id="hover-test">
+            hover test
+        </div>
+        <h3>
+            상태 선택자
+        </h3>
+        <p>
+            입력 양식(input)의 성태에 따라 선택되는 선택자 <br>
+            :focus -> 초점이 마춰졌을때 <br>
+            :checked -> 체크 되었을 때(radio, checkbox) <br>
+            :enabled/disabled -> 사용 가능/불가능 상태일때
+        </p>
+        <h4>
+            :focus
+        </h4>
+        <input type="text" name="" id="focus-test">
+        <h4>:checked</h4>
+        <label>사과
+            <input type="checkbox" name="fruits">
+        </label> <br>
+        <label>바나나
+            <input type="checkbox" name="fruits">
+        </label> <br> 
+        <label>멜론
+            <input type="checkbox" name="fruits">
+        </label> <br>
+        <h4>
+            :enabled/:disabled
+        </h4>
+        <div id="test-div2">
+            사용 가능 : <input enabled> <br>
+            사용 불가능 : <input disabled>
+        </div>
+        <hr>
+        <h3>
+            동위 선택자
+        </h3>
+        <p>
+            동위 관계(형제 관계)에서 뒤에 위치한 요소를 선택하는 선택자
+            <br>
+            <p>
+                A, B, B
+            </p>
+            <ol>
+                <li>
+                    A선택자 + B선택자 { css code ; } <br>
+                    A & B(하나)
+                </li>
+                <li>
+                    A선택자 ~ B선택자 { css code ; } <br>
+                    A & B(all)
+
+                </li>
+            </ol>
+        </p>
+        <div id="div1">1번 입니다.</div>
+        <div>2번 입니다.</div>
+        <div id="div3">3번 입니다.</div>
+        <div id="div4">4번 입니다.</div>
+        <p>관련 없는 태그입니다!</p>
+        <div id="div5">5번 입니다</div>
     </body>
 </html>
