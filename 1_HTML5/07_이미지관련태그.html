@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <title>
+            07_이지관련태그
+        </title>
+    </head>
+
+    <body>
+        <h1>
+            img tag
+            <!-- img = image import -->
+        </h1>
+        <h3>
+            [속성]
+            <ol>
+                <li>
+                    src : source
+                    <!-- 상대경로 : 현재 위치를 기준으로 지정
+                        '../'' : 상위 폴더
+                        '/'' : 아래, 하위
+                        './'' : 동일 -->
+                        <!-- px = 고정크기
+                             percent = 가변크기 -->
+                </li>
+                <li>
+                    width/height : change size
+                </li>
+                <li>
+                    alt : img info when import error
+                </li>
+            </ol>
+        </h3>
+        <table style="border-collapse: collapse;">
+            <tr>
+                <th>
+                    <img src="../img/cats/cat1.jpg" width="450px" alt="grey and black striped cat laying down";>
+                </th>
+                <th rowspan="2">
+                    <img src="https://plus.unsplash.com/premium_photo-1681449856722-7978f49cb66e?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" width="400px">
+                </th>
+            </tr>
+            <tr>
+                <th>
+                    <img src="/01_Webfront/img/flowers/flower1.jpg" width="450px">
+                </th>
+            </tr>
+        </table>
+        <img src="../img/dogs/dog2.jpg" width="30%">
+        <br>
+        <img src="/01_Webfront/img/flowers/flower12.jpg" width="450px" alt="hello">
+    </body>
+</html>

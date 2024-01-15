@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>
+            10_연습문제1
+        </title>
+    </head>
+
+    <body>
+       <p>
+        고객명 : <input type="text">
+       </p>
+       <p>
+        전화번호 : <input type="tel">
+       </p>
+       <p>
+        E-mail : <input type="email">
+       </p>
+       <p>
+        피자선택 : 
+        <select name="" id="">
+            <option>
+                피자를 선택하세요
+            </option>
+        </select>
+       </p>
+       <form>
+            <fieldset>
+                <legend>
+                    피자 사이즈
+                </legend>
+                <label for="Small">
+                    <input type="radio" name="pizza" id="Small">Small
+                </label>
+                <br><br>
+                <label for="Medium">
+                    <input type="radio" name="pizza" id="Medium">Medium
+                </label>
+                <br><br>
+                <label for="Large">
+                    <input type="radio" name="pizza" id="Large">Large
+                </label>
+                <br>
+            </fieldset>
+            <fieldset>
+                <legend>
+                    토핑 선텍
+                </legend>
+                <label for="bacon">
+                    <input type="checkbox" name="topping" id="bacon">베이컨
+                </label>
+                <br><br>
+                <label for="cheese">
+                    <input type="checkbox" name="topping" id="cheese">치즈
+                </label>
+                <br><br>
+                <label for="onion">
+                    <input type="checkbox" name="topping" id="onion">양파
+                </label>
+                <br><br>
+                <label for="mushroom">
+                    <input type="checkbox" name="topping" id="mushroom">버섯
+                </label>
+                <br>
+            </fieldset>
+            <p>
+                희망베송시간 : <input type="time">
+            </p>
+            <p>
+                배송시 요청사항 : <textarea rows="3" cols="20"></textarea>
+            </p>
+            <button type="submit" id="submit1">
+                주문하기
+                <script>
+                    document.getElementById("submit1").addEventListener("click", function(){
+                    alert("주문 완료");
+                })
+                </script>
+            </button>
+       </form>
+
+    </body>
+</html>

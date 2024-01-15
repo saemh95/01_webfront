@@ -1,0 +1,176 @@
+<!-- html용 주석 -->
+<!-- ctrl+/ (shortcut) -->
+<!-- change sequence shortkey = alt+up/down -->
+
+<!DOCTYPE html>
+
+<html lang="ko">
+<!-- lang = languag + search engine type -->
+    <head>
+        <!-- head = title, css (headsheet), script (js), metadata -->
+        <title>01_글자 관련 tag</title>
+        <meta charset="UTF-8">
+        <!-- charset = html encoding, unique code encoding -->
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    </head>
+    <body>
+        <!-- body = content on html doc -->
+        <!-- h1 = search engine priority #1 -->
+
+        <h1>
+            HTML 입니다.</h1>
+        <h2>
+            HTML 입니다.</h2>
+        <h3>
+            HTML 입니다.</h3>
+        <h4>
+            HTML 입니다.</h4>
+        <h5>
+            HTML 입니다.</h5>
+        <h6>
+            HTML 입니다.</h6>  
+        <hr>
+        <!-- hr = (horizon : 수평선) -->
+        <h3>HTMl 문서에서 연속으로 띄어쓰기, 엔터 입력시 발생하는 문제점</h3>
+        <h3 style="color:rgb(255, 4, 255)">
+            띄어쓰기, 엔터를 html에 표시하는 방법</h3>
+        <h3 style="color:rgb(255, 4, 255)">
+            띄어쓰기&nbsp;, 
+            <br>
+            엔터를 html에 표시하는 방법
+        </h3>
+        <!-- space = &nbsp; -->
+        <!-- linebreak = <br> -->
+        <hr>
+        <h3>p, pre</h3>
+        <!-- p = paragraph -->
+        1번 입니다.<br>
+        2번 입니다.<br>
+        3번 입니다.
+
+        <p>
+            1번 입니다.<br>
+            2번 입니다.<br>
+            3번 입니다.
+        </p>
+        <p>
+            1번 입니다.
+        </p>
+        <p>
+            2번 입니다.
+        </p>
+        <p>
+            3번 입니다.
+        </p>
+        <!-- pre = paragraph + start (true to text) end -->
+
+        <pre>
+            1번 입니다.
+            2번 입니다.
+            3번 입니다.
+        </pre>
+        
+        <hr>
+
+        <h1>
+            글자 관련 tag
+        </h1>
+
+        <p>
+            <b>
+                b tag
+                <!-- b = bold -->
+            </b>
+            <br>
+            <i>
+                i tag
+                <!-- i = italic -->
+            </i>
+            <br>
+            <u>
+                <i>
+                    <b>
+                        u tag
+                    </b>
+                </i>
+                <!-- u = underline -->
+                <br><br><br>
+            </u>
+            <strong>
+                strong tag
+                <!-- bold higher priority -->
+            </strong>
+            <br>
+            <em>
+                em tag
+                <!-- italic higher priority -->
+            </em>
+        </p>
+
+        <p>
+            <mark>
+                <b>
+                    mark tag
+                </b>
+                <!-- mark = highlight -->
+            </mark>
+            <br>
+            <s>
+                s tag
+                <!-- s = strikethrough -->
+            </s>
+            <br>
+            <del>
+                del tag
+                <!-- del = deleted text -->
+            </del>
+            <br>
+            <small>
+                small tag
+                <!-- small = small text -->
+            </small>
+            <br>
+            
+            <h1>
+                sup
+                <sup>
+                    tag
+                    <!-- sup = supplementary -->
+                </sup>
+            </h1>
+            <br>
+            <sub>
+                sub tag bottom supplementary
+            <br>
+            <b>
+                abbr tag
+                <abbr title="this is abbreviation">
+                    abbr tag
+                    <!-- mouse over tooltip -->
+                </abbr>
+            </b>
+            <br>
+         </p>
+         <p>
+            <mark>
+                태그
+            </mark>
+            들은 해당 태그 내에서 중첩으로 사용 가능하다.
+            <br>
+            <strong>굷은</strong>글자를 사용할 수 도 있고,
+            <em>
+                기울이거나
+            </em>
+            <s>취소선</s>을 넣는 등 
+            <br>
+            다양하게 사용할 수 있다.
+         </p>
+         <h1 style="background-color:rgb(20, 220, 15);">
+            <i style="color: rgb(27, 85, 26);">
+                HI
+            </i>
+        </h1>
+    </body>
+</html>

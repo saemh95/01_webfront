@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <title>
+            09_입력관련태그
+        </title>
+    </head>
+
+    <body>
+        <h1>
+            input 태그, form 태그
+        </h1>
+        <h3>
+            input tag
+            <!-- input = input for users -->
+            <ul>
+                <li>
+                text 관련된 input tag 
+                <!-- type "text" == 한줄짜리 문자열text을 입력할 수 있는 상자
+                                    <input> default == text
+                                    all <input> == inline -->
+                </li>
+                <li>
+                    input text
+                    <ol>
+                        <li>
+                            size
+                        </li>
+                        <li>
+                            maxlenght
+                        </li>
+                        <li>
+                            placeholder
+                        </li>
+                    </ol>
+                </li>
+            </ul>
+        </h3>
+        <input type="checkbox">
+        <br>
+        <input type="radio">
+        <br>
+        <input type="color">
+        <br>
+        <input type="date">
+        <br>
+        ID : <input size="20px" maxlength="5" placeholder="Place your ID">
+        <hr>
+        <h3>
+            type = "password"
+            <!-- password == not viewable -->
+        </h3>
+        Password : <input type="password">
+        <hr>
+        <h4>
+            type="url"
+            <!-- url = uniform resource location -->
+        </h4>
+        <p>
+            홈페이지 : <input type="url" value="https://">
+            <!-- input (value) = any type of input, default setting -->
+            <!-- form(url, email, tel) == data sent back to back end -->
+        </p>
+        <h4>
+            type="tel"
+            <!-- telephone number -->
+            <br>
+            전화번호 : <input type="tel" placeholder="예: 010-1234-1234">
+        </h4>
+        <h4>
+            type="email"
+            <br>
+            이메일 : <input type="email" placeholder="abc@abc.com">
+        </h4>
+        <hr>
+        <h3>
+            숫자 관련 input tag
+        </h3>
+        <p>
+            숫자 관련 tag
+            <ol>
+                <li>
+                    min : minimum
+                </li>
+                <li>
+                    max : maximum
+                </li>
+                <li>
+                    step : + or -
+                </li>
+            </ol>
+            <h4>
+                type = "number"
+                <!-- only num / dependency of browser skin box +/- -->
+            </h4>
+            점수입력 : <input type="number" step="10" min="0" max="100">
+        </p>
+        <h4>
+            type = "range"
+            <!-- range = slide bar/can use with js. -->
+        </h4>
+        <input type="range" min="0" max="50" step="1">
+        <hr><hr><hr>
+        <h3>
+            날짜/시간 관련 input tag
+        </h3>
+        <input type="file">
+        <br>
+        <input type="month">
+        <br>
+        <input type="date">
+        <br>
+        <input type="week">
+        <br>
+        <input type="image">
+        <br>
+        <input type="reset">
+        <br>
+        <input type="hidden">
+        <br>
+        <input type="search">
+        <br>
+        <input type="submit">
+        <br>
+        <input type="datetime-local">
+        <hr><hr><hr>
+        <input type="radio">
+        <input type="radio">
+        <input type="radio">
+        <input type="radio">
+        <br>
+        <input type="radio">
+        <input type="radio">
+        <input type="radio">
+        <input type="radio">
+        <br>
+        <input type="radio">
+        <input type="radio">
+        <input type="radio">
+        <input type="radio">
+        <br>
+        <input type="radio">
+        <input type="radio">
+        <input type="radio">
+        <input type="radio">
+        <br>
+        <label for="radio1">A팁</label>
+        <input type="radio" name="radio1" id="radio1">
+        <!-- id = data sent back to backend / used with <form> -->
+        <form>
+            <label for="radio2">B팁</label>
+            <input type="radio" name="radio2" id="radio2">
+        </form>
+
+        <label for="hobby1">야구</label><input type="checkbox" name="hobby" id="hobby1">
+        <label for="hobby2">축구</label><input type="checkbox" name="hobby" id="hobby2">
+        <label for="hobby3">농구</label><input type="checkbox" name="hobby" id="hobby3">
+        <label>
+            di<input type="checkbox">ib
+        </label>
+        <hr><hr><hr>
+        <h3>
+            기타 input 태그
+        </h3>
+        type = "color" : <input type="color"><br>
+        type = "file" : <input type="file"><br>
+        type = "hidden" : <input type="hidden" value="hi">
+        <hr><hr><hr>
+        <h1>
+            form tag
+        </h1>
+        <p>
+            - div(block) 형식 <br>
+            - *data from frontend sent to backend* <br><br>
+            [속성]<br>
+            1- action : where to send in backend<br>
+            2- name : naming of form tag to differentiate what form it is (with JS)<br>
+            3- method : how to send or retrieve data to server (get/post)<br>
+            4- targe : action -> current tab or new tab
+        </p>      
+        <h3>
+            form 예시1
+        </h3>  
+        <form method="get">
+            아이디 : <input type="text" name="id" value="user01">
+            비밀번호 : <input type="password" name="pw">
+            <button>
+                제출
+            </button>
+            <!-- 주소?id=user01&pw="data" 
+                    '?' : 제출된 값을 나타내는 문자열의 시작부분
+                    'id' 'pw' : input tag "name" 
+                    'user01' 'data' = input tag insert value -->
+        </form>
+
+        <h3>
+            form 예시2
+        </h3>
+        <form action="/01_Webfront/1_HTML5/07_이미지관련태그.html" target="_blank" method="get">
+            <label for="hobby1">
+                야구
+            </label>
+            <input type="checkbox" name="hobby" id="hobby1">
+            <label for="hobby2">
+                축구
+            </label>
+            <input type="checkbox" name="hobby" id="hobby2">
+            <label for="hobby3">
+                농구
+            </label>
+            <input type="checkbox" name="hobby" id="hobby3">
+            <button type="submit">
+                제출
+            </button>
+            <!-- button = default type == submit 
+                 button <button> == with JS can direct what use it can have
+                 button <reset> == reset user input data -->
+        </form>
+        <br>
+        <form action="">
+            <input type="text" id="text">
+            <button type="button" id="btn">
+                Just Button
+            </button>
+            <script>
+                // JavaScript
+                document.getElementById("btn").addEventListener("click", function(){
+                    alert("Oh no!");
+                })
+            </script>
+            <button type="reset">
+                초기화
+            </button>
+        </form>
+        <hr>
+        <h3>
+            fieldset / legend
+            <!-- fieldset == container with border -->
+            <!-- legend == naming of fieldset -->
+        </h3>
+        <form action="">
+            <fieldset>
+                <legend>
+                    this is legend
+                </legend>
+                아이디 : <input type="text" name="id" value="user01">
+                비밀번호 : <input type="password" name="pw">
+                <button type="submit">
+                    제출
+                </button>
+            </fieldset>
+        </form>
+        <hr><hr><hr>
+        <h3>
+            textarea/select/option
+            <!-- textarea == multiple lines of text
+                select == -->
+        </h3>
+        <textarea rows="5" cols="70" style="resize: none;" placeholder="ahasff">
+        </textarea>
+        <textarea rows="10" cols="100" style="resize: none;" placeholder="hello">
+        </textarea>
+        <form>
+            <select name="test">
+                <option value="1">
+                    option-1
+                </option>
+                <option value="2">
+                    option-2
+                </option>
+                <option selected value="3">
+                    option-3
+                </option>
+                <option value="4">
+                    option-4
+                </option>
+                <!-- select 제줄시 = option (if <value>) => value is the name of the data
+                    option (else <value?>) => between the option content 
+                        name is the name of the data -->
+                    </select>
+                <button>
+                    제출
+                </button>
+        </form>
+
+        <input type="checkbox" checked>
+        <input type="radio" checked>
+        <!-- type="checkbox" checked == default is checked -->
+    </body>
+</html>
