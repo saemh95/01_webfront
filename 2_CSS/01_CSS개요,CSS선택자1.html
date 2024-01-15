@@ -6,7 +6,50 @@
         <title>
             01_CSS개요, CSS선택자1
         </title>
-        
+
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Dongle:wght@300&display=swap');
+        </style>
+        <style>
+            /* CSS 주석 */
+            /* style tag == only CSS code can be input */
+            div {
+                border: 3px solid black;
+            }
+            strong {
+                background-color: yellow;
+            }
+            span {
+                background-color: pink;
+            }
+            #li-1 {
+                background-color: red;
+            }
+            #li-2 {
+                background-color: green;
+            }
+            #li-3 {
+                background-color: blue;
+            }
+            #li-4 {
+                background-color: blueviolet;
+            }
+            #li-5 {
+                background-color: peru;
+            }
+            .test-1 {
+                background-color: black; color: white;
+            }
+            .test-2 {
+                background-color: orange;
+            }
+            .test-4 {
+                font-weight: bold; font-size: large;
+            }
+            * {
+                background-color: rgb(245, 245, 220); font-family: 'Dongle', sans-serif; 
+            }
+        </style>
     </head>
 
     <body>
@@ -14,5 +57,132 @@
         <h1>
             CSS(Cascading Style Sheet)
         </h1>
+        <p>
+            HTML 실제로 화면에 표시되는 방법을 기술하는 언어
+        </p>
+        <p>
+            <ol>
+                <li>
+                    모양
+                </li>
+                <li>
+                    색상
+                </li>
+                <li>
+                    크기
+                </li>
+                <li>
+                    스타일
+                </li>
+            </ol>
+            <hr>
+        </p>
+        <h1>
+            CSS Selector
+        </h1>
+        <p>
+            HTML -> change element (style input type)
+        </p>
+        <hr>
+        <h3>
+            Tag Selector
+        </h3>
+        <p>
+            현재 HTML 문서 내에 같은 태그를 선택하는 선택자
+            <br>
+            tag {
+                CSS code ;
+            }
+        </p>
+        <div>
+            <strong>
+                Strong 태그에 작성된 내용입니다.
+            </strong>
+            <br>
+            <span>
+                Span 태그에 작성된 내용입니다.
+            </span>
+            <ul>
+                <li>
+                    <strong>
+                        Strong 태그에 작성된 내용입니다.
+                    </strong>
+                </li>
+                <li>
+                    <span>
+                        Span 태그에 작성된 내용입니다.
+                    </span>
+                </li>
+            </ul>
+        </div>
+        <hr>
+        <h3>
+            ID 선택자
+        </h3>
+        <P>
+            HTML 문서 내에서 ID 속성 값이 일치하는 요소를 선택하는 선택자
+            <br>
+            #id (속성갑) { css 코드; }
+            # == id
+        </P>
+        <ol>
+            <li id="li-1">
+                ID 선택자 테스트 1
+            </li>
+            <li id="li-2">
+                ID 선택자 테스트 2
+            </li>
+            <li id="li-3">
+                ID 선택자 테스트 3
+            </li>
+            <li id="li-4">
+                ID 선택자 테스트 4
+            </li>
+            <li id="li-5">
+                ID 선택자 테스트 5
+            </li>
+        </ol>
+        <!-- 카멜 표기법 == 
+            Java = helloWorld
+            DB = ALL_CODE_UPPERCASE
+            HTML = hello-world -->
+        </p>
+        <hr>
+        <h3>
+            class 선택자
+        </h3>
+        <p>
+            HTML 문서내에서 같은 class 속성값을 가지는 태그를 모두 선택하는 선택자
+            <br>
+            작성법 .class속성박 { css 코드; } <br>
+            . == class
+        </p>
+        <ul>
+            <li class="test-1 test-4">
+                Class tag test
+            </li>
+            <li class="test-2">
+                Class tag test
+            </li>
+            <li class="test-1">
+                Class tag test
+            </li>
+            <li class="test-2 test-4">
+                Class tag test
+            </li>
+            <li class="test-1">
+                Class tag test
+            </li>
+        </ul>
+        <hr>
+        <h3>
+            모든 요소 선택자 (*)
+        </h3>
+        <p>
+            모든 요소를 선택하는 선택자<br>
+            * { css code}
+        </p>
+
+        
     </body>
 </html>
