@@ -84,5 +84,86 @@
         <span class="area5 block inline-block">
             5변 영역
         </span>
+        <hr>
+        <h2>
+            영역 분할
+        </h2>
+        <h3>
+            상하 2분할
+        </h3>
+        <p>
+            <ol>
+                <li>
+                    감싸는 영역 요소
+                </li>
+                <li>
+                    내부에 영역을 분활할 요소
+                </li>
+                <li>
+                    display: block
+                </li>
+                <li>
+                    크키 단위 (고정(px)/가변(%))
+                </li>
+            </ol>
+        </p>
+        <div id="container-1">
+            <div class="div-1"></div>
+            <div class="div-2"></div>
+        </div>
+        <div id="container-2" style="margin-top: 3px;">
+            <div class="div-3"></div>
+            <div class="div-4"></div>
+        </div>
+        <hr>
+        <h3>
+            상하 분할
+        </h3>
+        <p>
+            <ol>
+                <li>
+                    감싸는 영역 요소 : id="container-3"
+                </li>
+                <li>
+                    화면 분활 내부 요소 : class="div-3"
+                </li>
+                <li>
+                    분할 비율 -> 20:30:50
+                </li>
+            </ol>
+        </p>
+        <h3>
+            좌우 2분할
+        </h3>
+        <p>
+            <ol>
+                <li>
+                    감싸는 영역 요소
+                </li>
+                <li>
+                    내부 분할 요소
+                </li>
+                <li>
+                    크기 단위
+                </li>
+                <li>
+                    display : inline-block
+                </li>
+            </ol>
+            
+            <div id="container-3">
+                <div class="div-5"></div><div class="div-5"></div>
+            </div>
+        </p>
+        <h3>
+            display: none
+        </h3>
+        <p>
+            요소는 존재하지만 화면에는 보이지 않음 (투명X) <br>
+            -> visibility : hidden; (투명 O)
+        </p>
+        <div class="div-6">test</div>
+        <div class="div-6" id="test4">test</div>
+        <div class="div-6">test</div>
     </body>
 </html>

@@ -24,3 +24,58 @@
 .inline-block {
     display: inline-block;
 }
+#container-1 {
+    border: 3px solid black;
+    height: 472px;
+    width: 323px;
+}
+.div-1 {
+    height: 50%;
+    width: 100%;
+    border: 1px dashed rebeccapurple;
+}
+.div-2 {
+    height: 50%;
+    width: 100%;
+}
+#container-2 {
+    border: 3px solid black;
+    height: 472px;
+    width: 323px;
+}
+.div-3 {
+    height: 30%;
+    width: 100%;
+    background-color: red;
+}
+.div-4 {
+    height: 70%;
+    width: 100%;
+    background-color: blue;
+}
+#container-3 {
+    border: 3px solid red;
+    width: 400px;
+    height: 230px;
+}
+.div-5 {
+    width: 50%;
+    height: 100%;
+    display: inline-block;
+}
+#container-3 > .div-5:first-child {
+    background-color: palegoldenrod;
+}
+#container-3 > .div-5:last-child {
+    background-color: blue;
+}
+.div-6 {
+    border: 3px solid black;
+    margin: 3px;
+    height: 100px;
+}
+#test4 {
+    background-color: black;
+    /* visibility: hidden; */
+    display: none;
+}
