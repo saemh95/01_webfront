@@ -1,0 +1,12 @@
+.top-bar {
+    position: relative;
+    width:max-content;
+}
+#pencil {
+    position: absolute;
+    top: 0px;
+    left: 100px;
+}
+.inline {
+    display: inline;
+}
