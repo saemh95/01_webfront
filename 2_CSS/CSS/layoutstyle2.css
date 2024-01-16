@@ -1,0 +1,75 @@
+.box {
+    width: 100px;
+    height: 100px;
+    background-color: plum;
+}
+/* contents */
+.content {
+    width: 150px;
+    height: 150px;
+    background-color: rgb(160, 160, 160);
+}
+/* border */
+.border {
+    border: 10px solid salmon;
+}
+/* padding */
+.padding {
+    padding: 30px;
+}
+/* margin */
+.margin {
+    margin: 100px;
+}
+#n1 {
+    margin: 200px;
+}
+.padding-test {
+    /* padding-top: 20px;   
+    padding-bottom: 50px;
+    padding-left: 30px;
+    padding-right: 40px; */
+
+    /* 값1개 : 상하좌우 */
+    /* padding: 30px; */
+
+    /* 값2개 : 상하, 좌우 */
+    /* padding: 30px 100px; */
+
+    /* 값3개 : 상, 좌우, 하 */
+    /* padding: 30px 50px 100px; */
+
+    /* 값4개 : 상, 우, 하, 좌 */
+    padding: 10px 30px 50px 80px;
+}
+.border-test {
+    /* border: 1px solid red; */
+    border-top: 1px solid black;
+    border-bottom: 5px dashed magenta;
+    border-left: 3px dotted blue;
+    border-right: 10px double green;
+}
+.box-container {
+    border: 2px solid black;
+    width: 500px;
+    height: 300px;
+}
+.margin-auto {
+    /* margin: 100px 200px; */
+    /* left-right auto margin to middle/ignore top-bot : margin:auto
+        if want to use top-bot margin elements have to be below 'margin: auto' */
+    margin: auto;
+    margin-top: 100px;
+}
+#box-sizing {
+    /* border 10px, padding 20px, content rest
+        total of 300px rectangle */
+        border: 10px solid black;
+        padding: 20px;
+        width: 300px;
+        height: 300px;
+        box-sizing: border-box;
+}
+* {
+    box-sizing: border-box;
+}
