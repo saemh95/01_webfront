@@ -1,0 +1,17 @@
+/* 5순위 = 태그 */
+div {
+    width: 200px;
+    height: 200px;
+    background-color: red !important; /* 1순위 = !importan; */
+}
+/* 4순위 = 클래스 */
+.cls1 {
+    background-color: gold;
+}
+/* 3순위 = ID  */
+#test1 {
+    width: fit-content;
+    height: fit-content;
+}
+/* 2순위 = inline */
+
