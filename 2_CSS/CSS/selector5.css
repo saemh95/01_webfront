@@ -1,0 +1,9 @@
+#test1 > p:only-child {
+    background-color: rgb(49, 49, 49);
+    color: white;
+}
+#test2 > p:only-of-type {
+    text-decoration-style: dashed;
+    font-size: 30px;
+    font-weight: bold;
+}

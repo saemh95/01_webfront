@@ -1,0 +1,76 @@
+/* 일반 구조 선택자 */
+/* :first-child */
+#test1 > p:first-child {
+    background-color: rebeccapurple;
+    color: white;
+}
+/* :last-child */
+#test1 > :last-child {
+    background-color: orangered;
+    color: whitesmoke;
+    font-size: 20px;
+    font-weight: bold;
+    border-block: solid;
+    border-block-color: blue;
+
+}
+/* :nth-child() */
+#test1 > p:nth-child(3) {
+    background-color: gold;
+    color: rgb(145, 105, 32);
+}
+/* :nth-last-child() */
+#test1 > :nth-last-child(2) {
+    background-color: rgb(180, 33, 33);
+    color: rgb(0, 238, 255);
+    font-weight: bold;
+}
+#test1 > :nth-child(2n-1) {
+    font-style: italic;
+    font-weight: b;
+}
+/* --------------------------- */
+/* :first-of-type */
+#test2 > p:first-of-type {
+    background-color: blueviolet;
+    color: rgb(202, 211, 219);
+}
+#test2 > pre:first-of-type {
+    background-color: rgb(220, 182, 255);
+    color: rgb(22, 54, 82);
+}
+/* :last-of-type */
+#test2 > pre:last-of-type {
+    background-color: tomato;
+    color: wheat;
+}
+#test2 > p:last-of-type {
+    background-color: rgb(250, 33, 33);
+    color: wheat;
+}
+/* :nth-of-type() */
+#test2 > p:nth-of-type(3) {
+    background-color: rgb(81, 199, 100);
+    color: rgb(214, 255, 206);
+}
+#test2 > pre:nth-of-type(2) {
+    background-color: rgb(44, 44, 44);
+    color: rgb(206, 206, 206);
+}
+/* :nth-last-of-type() */
+#test2 > p:nth-last-of-type(2) {
+    background-color: rgb(176, 107, 194);
+    color: rgb(255, 213, 134);
+}
+#test2 > pre:nth-last-of-type(2) {
+    font-size: large;
+    font-weight: bold;
+}
+/* --------------------------- */
+#test3 > li:not(:nth-child(3)) {
+    border: 3px solid coral;
+    margin: 3px;
+}
+#test3 > li:not(:nth-of-type(2n)) {
+    background-color: bisque;
+}
