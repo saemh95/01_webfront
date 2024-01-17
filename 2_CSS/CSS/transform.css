@@ -1,0 +1,68 @@
+/* if - css cross-browsing -
+-ms- : microsoft
+-webkit- : chrome/safari
+-o- : opera
+-moz- : firefox
+*/
+
+img {
+    width: 250px;
+}
+.trans-x-2d:hover {
+    transform: translate(300px, 100px);
+}
+.trans-scale:active {
+    transform: translate(100px, 100px);
+    scale: 300%;
+}
+.trans-rotate:active {
+    transform: rotate(15deg);
+}
+.trans-3d:hover {
+    transform: perspective(300px) translate3d(100px, 100px, 150px);
+    /* perpective = z axis */
+}
+.trans-rotate-x-3d {
+    transform: perspective(300px) rotateX(45deg);
+}
+.trans-rotate-y-3d {
+    transform: perspective(300px) rotateY(45deg);
+}
+.trans-rotate-z-3d {
+    transform: perspective(300px) rotateZ(45deg);
+}
+.box {
+    width: 150px;
+    height: 150px;
+    background-color: beige;
+    border: 1px solid black;
+}
+.test1:hover {
+    background-color: yellow;
+    transition-duration: 10s;
+}
+.test2:hover {
+    transform: translate(100px, -100px) rotate(360deg);
+    background-color: rgba(255, 125, 20, 0);
+    border-radius: 75px;
+}
+.test2 {
+    transition-duration: 10s;
+}
+.test3:hover {
+    background-color: indianred;
+    transform: rotate(1300deg) translate(500px, -300px);
+    scale: 200%;
+}
+.test3 {
+    transition-duration: 6s;
+    transition-timing-function: ease-in-out;
+}
+.test4:hover {
+    transform: translate(100px, 0px);
+}
+.test4 {
+    transition-delay: 0.1s;
+    transition-duration: 3s;
+    transition-timing-function: ease-in-out;
+}
