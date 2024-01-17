@@ -1,18 +1,17 @@
-#top-row {
-    width: 100px;
-    height: 100px;
-    background-color: blue;
+.container-1 {
+    width: 500px;
+    height: 500px;
+    border: 1px solid black;
 }
-#top2-row {
-    width: 100px;
-    height: 100px;
-    background-color: blue;
+.container-1 tr:last-child td:first-child,
+.container-1 tr:last-child td:nth-child(2),
+.container-1 tr:nth-child(4) td:first-child,
+.container-1 tr:nth-child(3) td:first-child {
+    background-color: red;
 }
-#top3-row {
-    width: 100px;
-    height: 100px;
-    background-color: blue;
-}
-* {
-    box-sizing: border-box;
+.container-1 tr:last-child td:nth-child(3),
+.container-1 tr:last-child td:nth-child(4),
+.container-1 tr:nth-child(4) td:nth-child(2),
+.container-1 tr:nth-child(4) td:nth-child(3) {
+    background-color: green;
 }
