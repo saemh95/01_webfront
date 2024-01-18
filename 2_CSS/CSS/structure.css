@@ -192,3 +192,39 @@ footer span {
     color: rgb(70, 70, 70);
     font-weight: bold;
 }
+/* 반응형 모바일 */
+@media all and (max-width: 767px) {
+    
+    main {
+        /* vw = viewport width */
+        width: 100vw;
+    }
+    header {
+        display: none;
+    }
+    nav {
+        width: 100%;
+        border-bottom: none;
+        height: auto;
+    }
+    nav > * {
+        display: flex;
+        flex-direction: column;
+    }
+    nav li {
+        flex-basis: auto;
+        border-bottom: 1px solid #ddd;
+    }
+    .content {
+        flex-direction: column;
+    }
+    footer > section > a {
+        font-size: 10px;
+    }
+    footer > p {
+        font-size: 10px;
+    }
+    footer {
+        height: 150px;
+    }
+}
