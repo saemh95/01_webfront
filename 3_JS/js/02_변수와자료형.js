@@ -108,3 +108,36 @@ console.log(number4[0], typeof number4[0])
 console.log(number4, typeof number4);
 const userInput = ["가위","바위","보"]
 console.log(userInput);
+
+// 2) JS 객체
+// 값을 k:v (map) 형식으로 여러개 저장하는 형태
+// {k:v, k:v, k:v ..}
+// k(key) : 값을 구분하는 이름 (변수명 비슷)
+// v(value) : K에 대응되는 값 (변수에 대입되는 값 비슷)
+
+const user = { id : "user01", pw : "pass01", userName : "홍길동"};
+console.log(user);
+// 객체에 존재하는 값 하나씩 얻어오기
+// 방법 1 : (변수명["key"])
+console.log(user["id"]);
+console.log(user["pw"]);
+console.log(user["userName"]);
+// 방법 2 : (변수명.key)
+console.log(user.id);
+console.log(user.pw);
+console.log(user.userName);
+
+//함수 (function)
+// const 변수명 = function () {};
+// 변수명 == 함수명
+
+const sumFn = function (a, b) {
+    return a+b
+};
+/* function sumFn(a, b) {
+    return a+b;
+};
+is the same thing
+*/ 
+console.log(typeof sumFn);
+console.log(sumFn(3, 5),);
