@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>
+            01_JS 개요
+        </title>
+    </head>
+
+    <body>
+        <h1>
+            Script 언어란?
+        </h1>
+        <pre>
+            기본 프로그램의 동작을
+            사용자의 요구에 맞게 수행되도록 해주는 용도의 언어
+
+            별도의 소스코드 compile을 하지 않고,
+            Interpreter=한줄씩 코드를 읽어서 해석하는 기능
+            를 이용해서 코드를 바로 실행
+
+            Pro : take less time to communicate with computer
+            Con : Program booting takes more time
+        </pre>
+        <hr>
+        <h1>
+            JavaScript
+        </h1>
+        <pre>
+            It is used in web-browser - using Interpreter
+            Object oriented programing language : Use objects & connects each objects
+            making relations to take same action
+        </pre>
+        <hr>
+        <h1>
+            JavaScrips 코드 작성 방법
+        </h1>
+        <ol>
+            <li>Brower DevTool -> console</li>
+            <li>
+                Internal  = use (script) tag in HTML
+                <br>
+                <button type="button" onclick="interalFn()">
+                    Internal use with JS
+                </button>
+                <script>
+                    // JS one line
+                    /* 
+                    JS Several Lines */
+                    // script = use JS code
+                    function interalFn() {
+                        // alert : in JS used as Notification box
+                        alert("Internal Button!");
+                    }
+                </script>
+            </li>
+            <li>
+                External = use file with .js
+                <br>
+                <button type="button" onclick="externalFn()">
+                    External use with JS
+                </button>
+            </li>
+        </ol>
+
+        <script src="../js/01_JS개요.js"></script>
+    </body>
+</html>
