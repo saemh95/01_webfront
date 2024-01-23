@@ -1,8 +1,12 @@
 * {
     box-sizing: border-box;
     /* border: 1px solid black; */
-    background-color: #A6927B;
-    font-family: monospace;
+    background-color: #26221A;
+    font-family: 'Courier New', Courier, monospace;
+}
+body {
+    /* background-image: url(/01_Webfront/img/test01/background-img3.png);
+    background-size: 80vw; */
 }
 #mainBody {
     display: flex;
@@ -23,6 +27,20 @@
     font-size: 30px;
     margin-top: 10px;
     font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+#home-button {
+    cursor: pointer;
+    height: 25px;
+    padding: 5px;
+    color: #A6927B;
+    border: none;
+    font-size: 20px;
+    margin-bottom: 10px;
+    background-color: transparent;
 }
 #leftBody > fieldset {
     flex-basis: 50%;
@@ -59,6 +77,10 @@
     font-size: 30px;
     font-weight: bold;
     padding: 10px;
+    cursor: pointer;
+    border: 1px solid white;
+    color: white;
+    margin: 3px
 }
 #mainBody-bot {
     flex-basis: 25%;
@@ -66,6 +88,32 @@
 #midBody {
     display: flex;
     flex-basis: 60%;
+    flex-direction: column;
+    padding: 50px;
+}
+#midBody-top {
+    flex-basis: 5%;
+    border-bottom: 3px solid #F25922;
+}
+#midBody-top > form {
+}
+#midBody-top > form > ul {
+    display: flex;
+    letter-spacing: 10px;
+}
+#midBody-top > form > ul > li {
+    flex-basis: 25%;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+#midBody-top > form > ul > li > a {
+    text-decoration: none;
+    font-size: large;
+    font-weight: bold;
+    color: #A6927B;
 }
 #rightBody {
     display: flex;
