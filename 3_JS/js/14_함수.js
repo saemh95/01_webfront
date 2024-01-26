@@ -118,3 +118,48 @@ document.querySelector("#btn3a").addEventListener("click", function() {
     // console.log(numbers);
     console.log('합계 : ', sumFn(numbers));
 });
+// 화살표 함수
+const arrowList = document.querySelectorAll(".arrow");
+
+// 화살표 함수 기본형태
+arrowList[0].addEventListener("click", () => {
+    alert("I wanna go home");
+});
+function print3(otherFn){
+    const numbers = [1,2,3,4];
+    console.log(otherFn(numbers));
+}
+
+arrowList[1].addEventListener("click", e => {
+    e.target.style.backgroundColor = "pink";
+    e.target.style.border = "1px solid pink";
+    print3(arr => {
+        let result = 0;
+        for (let i=0;i<arr.length;i++) {
+            result += arr[i];
+        }
+        return result;
+    });
+});
+// return 1-line
+// function twoNumberPlus(otherFn) {
+//     const input1 = Number(prompt("1 값"));
+//     const input2 = Number(prompt("2 값"));
+//     alert(otherFn(input1,input2));
+// };
+// arrowList[2],addEventListener("click", () => {
+//     twoNumberPlus((a,b)=>a+b);
+// });
+// return 1 line to object
+function printObject(otherFn) {
+    const obj = otherFn("me",20);
+    console.log(`${obj.name}`);
+    console.log(`${obj.age}`);
+}
+arrowList[3].addEventListener("click", ()=>{
+    printObject((name,age)=>{
+        return {name,age};
+    });
+});
+/* 즉시실행 */
+(()=>{console.log("측시실행")})()
