@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>전화번호목록</title>
+        <link rel="stylesheet" href="../css/contactlist.css">
+    </head>
+
+    <body>
+
+
+        <header id="left-margin"></header>
+
+
+        <section id="num-container">
+
+            <section id="userInput">
+                <input type="text" id="userInput-num" maxlength="11">
+            </section>
+
+            <section id="number-digit">
+                <div class="number" id="row-1">
+                    <div ><button class="num-keypad" id="num1">1</button></div>
+                    <div ><button class="num-keypad" id="num2">2</button></div>
+                    <div ><button class="num-keypad" id="num3">3</button></div>
+                </div>
+                <div class="number" id="row-2">
+                    <div ><button class="num-keypad" id="num4">4</button></div>
+                    <div ><button class="num-keypad" id="num5">5</button></div>
+                    <div ><button class="num-keypad" id="num6">6</button></div>
+                </div>
+                <div class="number" id="row-3">
+                    <div ><button class="num-keypad" id="num7">7</button></div>
+                    <div ><button class="num-keypad" id="num8">8</button></div>
+                    <div ><button class="num-keypad" id="num9">9</button></div>
+                </div>
+                <div class="number" id="row-4">
+                    <div ><button class="num-keypad" id="num#">#</button></div>
+                    <div ><button class="num-keypad" id="num0">0</button></div>
+                    <div ><button class="num-keypad" id="num*">*</button></div>
+                </div>
+            </section>
+
+            <section id="button">
+                <button type="button" id="add">추가</button>
+                <button type="button" id="reset">초기화</button>
+            </section>
+            
+        </section>
+
+
+        <section id="tel-container">
+            <section id="tel-top">전화 번호 목록</section>
+            <section id="tel-list">
+            </section>
+        </section>
+
+        
+        <footer id="right-margin"></footer>
+
+
+
+        <script src="../js/contactlist.js"></script>
+    </body>
+</html>

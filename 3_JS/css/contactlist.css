@@ -1,0 +1,240 @@
+* {
+    box-sizing: border-box;
+    /* border: 1px solid black; */
+    margin: 0;
+    padding: 0;
+}
+body {
+    display: flex;
+    height: 45vw;
+}
+/* left-margin */
+#left-margin {
+    flex-basis: 25%;
+}
+
+
+/* left-side-num */
+#num-container {
+    flex-basis: 25%;
+    border-right: 3px solid #dddcdc;
+
+}
+#userInput {
+    height: 15%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* keypad */
+#number-digit {
+    height: 65%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-right: 20px;
+    padding-left: 20px;
+    
+}
+.number {
+    padding: 20px;   
+}
+.num-keypad {
+    flex-basis: 100%;
+    height: 100%;
+    border-radius: 50px;
+    cursor: pointer;
+    border: none;
+    background-color: transparent;
+    font-size: 25px;
+    font-weight: bolder;
+}
+.num-keypad:hover {
+    background-color: #c2c2c2;
+}
+.num-keypad:active {
+    background-color: #707070;
+}
+
+/* input */
+#userInput-num {
+    height: 60px;
+    width: auto;
+    font-size: 30px;
+    padding: 30px;
+    letter-spacing: 10px;
+    text-align: center;
+    border: none;
+    text-decoration: none;
+    outline: none;
+    overflow: hidden;
+    caret-color: transparent;
+    border-bottom: 2px solid #c2c2c2;
+}
+/* keypad-row1 */
+#row-1 {
+    display: flex;
+    flex-basis: 25%;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+#row-1 > div {
+    flex-basis: 33%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    height: 100%;
+    padding: 20px;
+}
+
+/* keypad-row2 */
+
+#row-2 {
+    display: flex;
+    flex-basis: 25%;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+#row-2 > div {
+    flex-basis: 33%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    height: 100%;
+    padding: 20px;
+}
+
+/* keypad-row3 */
+
+#row-3 {
+    display: flex;
+    flex-basis: 25%;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+#row-3 > div {
+    flex-basis: 33%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    height: 100%;
+    padding: 20px;
+}
+
+/* keypad-row4 */
+
+#row-4 {
+    display: flex;
+    flex-basis: 25%;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+#row-4 > div {
+    flex-basis: 33%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    height: 100%;
+    padding: 20px;
+}
+
+
+
+/* button */
+#button {
+    height: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
+}
+#button > button {
+    width: 90%;
+    height: 20%;
+    margin-top: 10px;
+    border-radius: 20px;
+    background-color: transparent;
+    font-size: 15px;
+    font-weight: bolder;
+    cursor: pointer;
+}
+#button > button:first-of-type {
+    border: 3px solid green;
+    color: green;
+}
+#button > button:first-of-type:hover {
+    background-color: green;
+    color: white;
+}
+#button > button:first-of-type:active {
+    background-color: rgb(0, 80, 0);
+    border: 3px solid rgb(0, 80, 0);
+    color: white;
+}
+#button > button:last-of-type {
+    border: 3px solid #c2c2c2;
+    color: #c2c2c2;
+}
+#button > button:last-of-type:hover {
+    background-color: #c2c2c2;
+    color: white;
+}
+#button > button:last-of-type:active {
+    background-color: #707070;
+    border: 3px solid #707070;
+    color: white;
+}
+
+
+
+/* right-side-tel */
+#tel-container {
+    flex-basis: 25%;
+    display: flex;
+    flex-direction: column;
+}
+
+#tel-top {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-basis: 15%;
+    font-size: 20px;
+    font-weight: bolder;
+}
+#tel-list {
+    flex-basis: 85%;
+    justify-content: center;
+    align-items: center;
+    
+}
+#tel-list > div {
+    display: flex;
+    flex-basis: 100%;
+    height: 5%;
+}
+
+
+
+
+
+
+/* right-margin */
+#right-margin {
+    flex-basis: 25%;
+}
